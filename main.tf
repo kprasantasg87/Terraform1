@@ -63,4 +63,4 @@ resource aws_instance "instance"{
   sudo yum install python-pip -y
   sudo pip install ansible 
   sudo yum  install git -y
-  }
+}
