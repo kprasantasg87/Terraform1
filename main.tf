@@ -63,4 +63,17 @@ resource aws_instance "instance"{
   sudo yum install python-pip -y
   sudo pip install ansible 
   sudo yum  install git -y
+  echo `whoami`
+  sudo git clone https://github.com/kprasantasg87/Jenkins_test.git
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/user.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/install.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/serviceup.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/jenkins.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/jenkinsrepo.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/jenkinskey.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/serverupgrade.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/jenkinsinstall.yml
+  sudo ansible-playbook -i /Jenkins_test/inventory.yml /Jenkins_test/jenkinsstart.yml
+  EOF
+  
 }
