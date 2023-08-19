@@ -10,12 +10,4 @@ variable "secretkey"{
 variable "vpccidr"{
    default="10.0.0.0/16"
 }
-variable "subdir"{
-    default="10.0.1.0/24"
-}
-variable "IGWCIDR"{
-    default="0.0.0.0/0"
-}
-variable "image"{
-    default="ami-072ec8f4ea4a6f2cf"
-}
+
